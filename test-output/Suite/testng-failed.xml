@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.SchoolMgmt.schooltest.TestCasesForLoginFeeUnits">
+        <methods>
+          <include name="teardown"/>
+          <include name="Test4"/>
+          <include name="Siteup"/>
+        </methods>
+      </class> <!-- com.SchoolMgmt.schooltest.TestCasesForLoginFeeUnits -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <classes>
+      <class name="com.SchoolMgmt.schooltest.TestCasesForLoginGeneralMaintain">
+        <methods>
+          <include name="Test4"/>
+          <include name="Test5"/>
+          <include name="teardown"/>
+          <include name="Siteup"/>
+        </methods>
+      </class> <!-- com.SchoolMgmt.schooltest.TestCasesForLoginGeneralMaintain -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test3(failed)" parallel="tests">
+    <classes>
+      <class name="com.SchoolMgmt.schooltest.TestCasesForLoginMappings">
+        <methods>
+          <include name="Test2"/>
+          <include name="Test5"/>
+          <include name="Test4"/>
+          <include name="teardown"/>
+          <include name="Test6"/>
+          <include name="Test8"/>
+          <include name="Test3"/>
+          <include name="Siteup"/>
+          <include name="Test7"/>
+        </methods>
+      </class> <!-- com.SchoolMgmt.schooltest.TestCasesForLoginMappings -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

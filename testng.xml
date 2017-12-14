@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests" thread-count = "3">
+  <test name="Test1">
+    	<classes>
+      		<class name="com.SchoolMgmt.schooltest.TestCasesForLoginFeeUnits"/>
+    	</classes>
+    </test>
+      <test name="Test2">
+    		<classes>
+    			<class name="com.SchoolMgmt.schooltest.TestCasesForLoginGeneralMaintain"/>  
+    		</classes>
+    	</test> 	
+        <test name="Test3">
+   	     	<classes>
+        	  <class name="com.SchoolMgmt.schooltest.TestCasesForLoginMappings"/>
+    		</classes>
+	    </test> <!-- Test --> 
+</suite> <!-- Suite -->
