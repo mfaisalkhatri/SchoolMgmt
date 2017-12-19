@@ -3,6 +3,7 @@ package com.SchoolMgmt.utils;
 import java.io.File;
 import java.io.FileInputStream;
 
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -43,6 +44,13 @@ public class ExcelDataConfig {
 		int row = wb.getSheetAt(sheetIndex).getLastRowNum();
 		//row = row +1;
 		return row;
+	}
+	
+	public int getColCount(int sheetIndex) {
+		  sh1 = wb.getSheetAt(sheetIndex);
+	      XSSFRow row = sh1.getRow(0);
+	      int colCount = row.getLastCellNum();
+	      return colCount;
 	}
 }
 
